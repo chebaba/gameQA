@@ -1,0 +1,87 @@
+{
+
+  "content": [
+    {
+      "title": "Q：如图所示，在这种无信号灯控制情况下，A车、B车、C车的通行权顺序是什么？",
+      "pic" : "image/answer_5.jpg",
+      "a" : "B车、A车、C车",
+      "b" : "C车、A车、B车",
+      "c" : "A车、B车、C车",
+      "d" : "A车、C车、B车",
+      "soft" :1,
+      "true" : 2,
+      "checked":-1,
+      "istrue":0
+  	},
+  	{
+      "title": "Q：机动车仪表板上（如图所示）一直亮，表示发动机控制系统故障。",
+      "pic" : "image/answer_8.jpg",
+      "a" : "正确",
+      "b" : "错误",
+      "c" : "不知道",
+      "d" : "不想问答",
+      "soft" :2,
+      "true" : 0,
+      "checked":-1,
+      "istrue":0
+  	},
+  	{
+      "title": "Q：机动车仪表板上（如图所示）亮时表示什么？",
+      "pic" : "image/answer_9.jpg",
+      "a" : "已开启前照灯近光",
+      "b" : "已开启前雾灯",
+      "c" : "已开启前照灯远光",
+      "d" : "已开启后雾灯",
+      "soft" :3,
+      "true" : 0,
+      "checked":-1,
+      "istrue":0
+  	},
+  	{
+      "title": "某驾驶一辆中型客车（乘载27人）行至汤山镇王伏村壶南头路段，在上坡过程中，机动车发生后溜驶出路外坠入落差约80米的山崖，造成11人死亡、7人受伤请问徐某的主要违法行为是什么？",
+      "pic" : "image/answer_10.jpg",
+      "a" : "疲劳驾驶",
+      "b" : "酒后驾驶",
+      "c" : "客车超员",
+      "d" : "超速行驶",
+      "soft" :4,
+      "true" : 2,
+      "checked":-1,
+      "istrue":0
+  	},
+  	{
+      "title": "请问第一位拥有汽车的中国人是谁？",
+      "pic" : "image/answer_14.jpg",
+      "a" : "毛泽东",
+      "b" : "邓小平",
+      "c" : "孙中山",
+      "d" : "慈禧",
+      "soft" :5,
+      "true" : 3,
+      "checked":-1,
+      "istrue":0
+  	}
+  ],
+  
+
+
+  "map": [
+    {
+      "name": "Monona Terrace Convention Center",
+      "lat": 43.071584,
+      "lng": -89.380120,
+      "center": true
+    },
+    {
+      "name": "Ionic HQ",
+      "lat": 43.074395,
+      "lng": -89.381056
+    },
+    {
+      "name": "Afterparty - Brocach Irish Pub",
+      "lat": 43.07336,
+      "lng": -89.38335
+    }
+  ]
+
+}
