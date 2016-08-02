@@ -1,0 +1,147 @@
+.popover-page {
+  .text-to-change div {
+    margin: 10px auto;
+  }
+
+  ion-row,
+  ion-col {
+    padding: 0;
+  }
+
+  .text-button {
+    padding-left: 0;
+    text-align: center;
+    min-height: 20px;
+    line-height: 18px;
+  }
+
+  .text-button .item-inner {
+    padding-right: 0;
+  }
+
+  .text-smaller {
+    font-size: 12px;
+  }
+
+  .text-larger {
+    font-size: 16px;
+  }
+
+  .row-dots {
+    text-align: center;
+
+    .dot {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      margin: 10px auto;
+      position: relative;
+    }
+  }
+
+  .dot-white {
+    background-color: rgb(255,255,255);
+  }
+
+  .dot-tan {
+    background-color: rgb(249,241,228);
+  }
+
+  .dot-grey {
+    background-color: rgb(76,75,80);
+  }
+
+  .dot-black {
+    background-color: rgb(0,0,0);
+  }
+
+  .dot.selected {
+    border-width: 2px;
+    border-color: #327eff;
+  }
+
+  .text-athelas {
+    font-family: "Athelas";
+  }
+
+  .text-charter {
+    font-family: "Charter";
+  }
+
+  .text-iowan {
+    font-family: "Iowan";
+  }
+
+  .text-palatino {
+    font-family: "Palatino";
+  }
+
+  .text-san-francisco {
+    font-family: "San Francisco";
+  }
+
+  .text-seravek {
+    font-family: "Seravek";
+  }
+
+  .text-times-new-roman {
+    font-family: "Times New Roman";
+  }
+}
+
+&.hairlines {
+  .popover-page {
+    .text-smaller,
+    .row-dots,
+    .dot {
+      border-width: $hairlines-width;
+    }
+  }
+}
+ion-content{
+	.result{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 4;
+		background-color: rgba(0,0,0,.8);
+	}
+	.result img{
+		width: 80%;
+		display: block;
+		margin: 20% auto 0;
+	}
+	.result .point{
+		position: absolute;
+		top: 19%;
+		left: 22%;
+		text-align: center;
+		width: 11%;
+		height: 1rem;
+		font-size: 1.3rem;
+		font-weight: 900;
+	    color: #fff;	
+	}
+	.result .t{
+		position: absolute;
+		top: 19%;
+		left: 51%;
+		text-align: center;
+		width: 11%;
+		height: 1rem;
+		font-size: 1.3rem;
+		color: #db4d4f;
+		font-weight: 900;
+	}
+	.result .f{
+		position: absolute;
+		top: 19%;
+		left: 64.5%;
+		text-align: center;
+		width: 11%;
+		height: 1rem;
+		font-size: 1.3rem;
+		color: #db4d4f;
+		font-weight: 900;
+	}																								
+}

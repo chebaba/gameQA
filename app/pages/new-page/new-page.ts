@@ -33,7 +33,7 @@ export class NewPage {
   }
 
   nextPage(){
-    this.choice();
+    // this.choice(ev);
     if (this.nextPageIndex == 5){
       this.presentPopover(event,this.confData);
     } else {
@@ -41,8 +41,9 @@ export class NewPage {
     }
   }
 
-  choice(){
-
+  choice(ev){
+    //
+    ev.target.value;
     var choiceIndex = 0;
     this.confData.setCheckAndTrue(this.nextPageIndex - 1,choiceIndex);
     // confData.setCheckAndTrue(this.pageInfo.soft,1)
@@ -72,14 +73,19 @@ export class NewPage {
 
 
         if(score<40) {
-          resultPage = {"score":score,"img":'image/answer_result_1.png'};
+          resultPage = {"score":score,"img":'image/answer_result_1.png',"correct":temp};
+        }
+        else if(score>=40&&score<=80){
+          resultPage = {"score":score,"img":'image/answer_result_2.png',"correct":temp};          
         }
         else{
-          resultPage = {"score":score,"img":'image/answer_result_2.png'};
+          resultPage = {"score":score,"img":'image/answer_result_3.png',"correct":temp};
         }
         // 创建结果页
-        let popover = Popover.create(PopoverPage, resultPage);
-        this.nav.present(popover,{ev:ev});
+        // let popover = Popover.create(PopoverPage, resultPage);
+        // this.nav.present(popover,{ev:ev});
+
+        this.nav.push(PopoverPage, resultPage);
       });
       
 
