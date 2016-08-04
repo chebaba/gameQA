@@ -20,20 +20,24 @@
 			<div class="title">{{pageInfo.title}}</div>
 			<img [src]="pageInfo.pic" alt="" class="pic" />
 		</div>
-		<div class="checkbox" (click)="choice(this)">A<div class="checked">✔</div></div>
+		<div class="checkbox" (click)="choice($event)">A<div class="checked">✔</div></div>
 		<div class="a option">{{pageInfo.a}}</div>
 		<br>
-		<div class="checkbox" (click)="choice(this)">B<div class="checked">✔</div></div>
+		<div class="checkbox" (click)="choice($event)">B<div class="checked">✔</div></div>
 		<div class="b option">{{pageInfo.b}}</div>
 		<br>
-		<div class="checkbox" (click)="choice(this)">C<div class="checked">✔</div></div>
+		<div class="checkbox" (click)="choice($event)">C<div class="checked">✔</div></div>
 		<div class="c option">{{pageInfo.c}}</div>
 		<br>
-		<div class="checkbox" (click)="choice(this)">D<div class="checked">✔</div></div>
+		<div class="checkbox" (click)="choice($event)">D<div class="checked">✔</div></div>
 		<div class="d option">{{pageInfo.d}}</div>
 		<br>
 		<div class="useless"></div>
 		<button class="next_question" (click)="nextPage()">下一题</button>
 	</div>
 
-</ion-content>
+	<!-- <ion-content #popoverContent padding class="popover-page">
+	  <div #popoverText class="text-to-change">
+	  </div>
+	</ion-content> -->
+</ion-content >
