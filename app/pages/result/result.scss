@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .popover-page {
   .text-to-change div {
     margin: 10px auto;
@@ -144,4 +145,88 @@ ion-content{
 		color: #db4d4f;
 		font-weight: 900;
 	}																								
+=======
+.popover-page{
+	ion-content{
+		.result{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 4;
+			background-color: rgba(0,0,0,.8);
+		}
+		.result img{
+			width: 80%;
+			display: block;
+			margin: 20% auto 0;
+		}
+		.result .point{
+			position: absolute;
+			top: 19%;
+			left: 22%;
+			text-align: center;
+			width: 11%;
+			height: 1rem;
+			font-size: 1.3rem;
+			font-weight: 900;
+		    color: #fff;	
+		}
+		.result .t{
+			position: absolute;
+			top: 19%;
+			left: 51%;
+			text-align: center;
+			width: 11%;
+			height: 1rem;
+			font-size: 1.3rem;
+			color: #db4d4f;
+			font-weight: 900;
+		}
+		.result .f{
+			position: absolute;
+			top: 19%;
+			left: 64.5%;
+			text-align: center;
+			width: 11%;
+			height: 1rem;
+			font-size: 1.3rem;
+			color: #db4d4f;
+			font-weight: 900;
+		}			
+		.result .fresh{
+			position: absolute;
+			top: 65%;
+		    height: 20%;
+		    width: 30%;
+		    right: 18%;
+		/*    margin-top: 5rem;*/
+		}
+		.result .share{
+			position: absolute;
+			top: 65%;
+		    height: 20%;
+		    width: 30%;
+		    left: 18%;
+		/*    margin-top: 5rem;*/
+		}
+		.result .result_pic{
+			position: absolute;
+			top: 18%;
+		    width: 74%;
+		    right: 0;
+		    left: 0;
+		}
+		.result .result_share{
+			position: absolute;
+		    top: 0;
+		    background-color: rgba(0,0,0,.8);
+		    width: 100%;
+		    height: 100%;
+		    z-index: 5;
+		}
+		.result .result_share img{
+			margin: 0 auto;
+		}																					
+	}
+>>>>>>> master
 }

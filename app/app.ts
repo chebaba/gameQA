@@ -3,6 +3,7 @@ import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {NewPage} from './pages/new-page/new-page';
+import {PopoverPage} from './pages/result/result';
 
 import { ConferenceData } from './providers/conference-data';
 

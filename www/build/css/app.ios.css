@@ -8683,13 +8683,13 @@ body {
   font-size: 1.4rem;
   background-color: #fff; }
 
-ion-content {
+.home-page {
   background-color: #fad666;
   font-style: 'Microsoft YaHei'; }
-  ion-content img.index_pic {
+  .home-page img.index_pic {
     width: 100%;
     margin-top: 10%; }
-  ion-content div.click {
+  .home-page div.click {
     z-index: 3;
     width: 50%;
     position: absolute;
@@ -8698,22 +8698,38 @@ ion-content {
     margin: 0 auto;
     height: 10%;
     top: 60%; }
-  ion-content .cont {
+
+.new-page ion-content {
+  background-color: #fad666;
+  font-style: 'Microsoft YaHei'; }
+  .new-page ion-content img.index_pic {
+    width: 100%;
+    margin-top: 10%; }
+  .new-page ion-content div.click {
+    z-index: 3;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 10%;
+    top: 60%; }
+  .new-page ion-content .cont {
     width: 100%;
     margin: auto 0%;
     background-color: #fff;
     border-radius: .4rem;
     padding: 4%;
     position: relative; }
-    ion-content .cont img.tit {
+    .new-page ion-content .cont img.tit {
       width: 80%;
       margin: 2% auto;
       display: block; }
-    ion-content .cont .useless {
+    .new-page ion-content .cont .useless {
       margin-bottom: 3rem; }
-    ion-content .cont .pic {
+    .new-page ion-content .cont .pic {
       margin: 1rem 0; }
-    ion-content .cont .checkbox {
+    .new-page ion-content .cont .checkbox {
       width: 1.8rem;
       height: 1.8rem;
       margin: 0px .6rem 0 0;
@@ -8726,7 +8742,7 @@ ion-content {
       /*    background-color: #fad666;*/
       color: #333;
       position: relative; }
-    ion-content .cont .checkbox .checked {
+    .new-page ion-content .cont .checkbox .checked {
       background-color: #5bc8ff;
       color: #fff;
       width: 100%;
@@ -8736,10 +8752,10 @@ ion-content {
       border-radius: 50%;
       display: none;
       z-index: 2; }
-    ion-content .cont .option {
+    .new-page ion-content .cont .option {
       display: inline-block;
       margin-bottom: 1rem; }
-    ion-content .cont button.next_question {
+    .new-page ion-content .cont button.next_question {
       margin: 0 auto;
       border: none;
       background-color: #ec5b5d;
@@ -8755,3 +8771,82 @@ ion-content {
       bottom: 0;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
+
+.popover-page ion-content .result {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.popover-page ion-content .result img {
+  width: 80%;
+  display: block;
+  margin: 20% auto 0; }
+
+.popover-page ion-content .result .point {
+  position: absolute;
+  top: 19%;
+  left: 22%;
+  text-align: center;
+  width: 11%;
+  height: 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #fff; }
+
+.popover-page ion-content .result .t {
+  position: absolute;
+  top: 19%;
+  left: 51%;
+  text-align: center;
+  width: 11%;
+  height: 1rem;
+  font-size: 1.3rem;
+  color: #db4d4f;
+  font-weight: 900; }
+
+.popover-page ion-content .result .f {
+  position: absolute;
+  top: 19%;
+  left: 64.5%;
+  text-align: center;
+  width: 11%;
+  height: 1rem;
+  font-size: 1.3rem;
+  color: #db4d4f;
+  font-weight: 900; }
+
+.popover-page ion-content .result .fresh {
+  position: absolute;
+  top: 65%;
+  height: 20%;
+  width: 30%;
+  right: 18%;
+  /*    margin-top: 5rem;*/ }
+
+.popover-page ion-content .result .share {
+  position: absolute;
+  top: 65%;
+  height: 20%;
+  width: 30%;
+  left: 18%;
+  /*    margin-top: 5rem;*/ }
+
+.popover-page ion-content .result .result_pic {
+  position: absolute;
+  top: 18%;
+  width: 74%;
+  right: 0;
+  left: 0; }
+
+.popover-page ion-content .result .result_share {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 5; }
+
+.popover-page ion-content .result .result_share img {
+  margin: 0 auto; }

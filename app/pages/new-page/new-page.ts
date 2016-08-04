@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 import { Popover,NavController, NavParams,Page } from 'ionic-angular';
 
 import { ConferenceData } from '../../providers/conference-data';
