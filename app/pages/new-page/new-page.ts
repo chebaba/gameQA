@@ -16,19 +16,34 @@ export class NewPage {
 	pageInfo: any;
 	nextPageInfo:any;
   nextPageIndex:any;
-	// pageCnt:any;
-	// pageInfos=[];
+  public dataObject;
 
   constructor(private nav: NavController, private confData: ConferenceData, private navParams:NavParams) {
-  	// let aa = confData.getContents(navParams.data);
-  	// this.pageInfo2 = aa[1];
-  	this.pageInfo = navParams.data;
-  	var pageCnt = navParams.data.soft;
-    this.nextPageIndex = pageCnt;
 
-	  confData.getContents(pageCnt).then(nextPage=>{
+  	this.pageInfo = navParams.data;
+    var checked = navParams.data.checked;
+
+    this.dataObject={"option1":false,"option2":false,"option3":false,"option4":false};
+    switch(checked){
+      case"0":this.dataObject.option1=true;
+      break;
+      case"1":this.dataObject.option2=true;
+      break;
+      case"2":this.dataObject.option3=true;
+      break;
+      case"3":this.dataObject.option4=true;
+      break;
+      default:
+    }
+
+
+    var nextPageCnt = navParams.data.soft;
+    this.nextPageIndex = nextPageCnt;
+
+	  confData.getContents(nextPageCnt).then(nextPage=>{
   		this.nextPageInfo = nextPage;
   	});
+
   }
 
   nextPage(){
@@ -41,17 +56,8 @@ export class NewPage {
   }
 
   choice(ev){
-    //
-    ev.target.value;
-    var choiceIndex = 0;
+    var choiceIndex = ev.currentTarget.attributes[0].value;
     this.confData.setCheckAndTrue(this.nextPageIndex - 1,choiceIndex);
-    // confData.setCheckAndTrue(this.pageInfo.soft,1)
-    //获得选择的选项并记录到对象的相对数据中
-        // cont_json[i-1].checked = $('.z2 .cont .checkbox').index($(this));
-        // if(cont_json[i-1].checked==cont_json[i-1].true) cont_json[i-1].istrue=1;
-        // $(this).find($('.checked')).show();
-        // $(this).siblings().find($('.checked')).hide();
-        // $('.z2 button.next_question').css('display','block');
   }
 
     presentPopover(ev,confData: ConferenceData) {
@@ -60,10 +66,9 @@ export class NewPage {
       var allQuestions;
       var temp=0;
 
-      // allQuestions = confData.getContentsAll();
       confData.getContentsAll().then(result=>{
-         // this.nextPageInfo=result;
-         allQuestions = result;
+
+        allQuestions = result;
         for(var i = 0;i<5;i++){
           if(allQuestions[i].istrue==1) 
             temp++;
@@ -80,9 +85,6 @@ export class NewPage {
         else{
           resultPage = {"score":score,"img":'image/answer_result_3.png',"correct":temp};
         }
-        // 创建结果页
-        // let popover = Popover.create(PopoverPage, resultPage);
-        // this.nav.present(popover,{ev:ev});
 
         this.nav.push(PopoverPage, resultPage);
       });

@@ -17,8 +17,7 @@ export class PopoverPage {
   testText;
 
   constructor(private nav: NavController, confData: ConferenceData,param:NavParams) {
-  	// var params;
-	// params = param.data;
+  	
 	this.pageinfoPop = param.data;
   }
 

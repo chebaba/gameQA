@@ -20,24 +20,26 @@
 			<div class="title">{{pageInfo.title}}</div>
 			<img [src]="pageInfo.pic" alt="" class="pic" />
 		</div>
-		<div class="checkbox" (click)="choice($event)">A<div class="checked">✔</div></div>
-		<div class="a option">{{pageInfo.a}}</div>
+		
+		<ion-list radio-group >
+		<ion-radio data_checked="0" (click)="choice($event)" [checked]="dataObject.option1" >
+		</ion-radio>
+		<ion-label>{{pageInfo.a}}</ion-label>
+		<br>	
+		<ion-radio data_checked="1" (click)="choice($event)" [checked]="dataObject.option2" >
+		</ion-radio>
+		<ion-label>{{pageInfo.b}}</ion-label>
 		<br>
-		<div class="checkbox" (click)="choice($event)">B<div class="checked">✔</div></div>
-		<div class="b option">{{pageInfo.b}}</div>
+		<ion-radio data_checked="2" (click)="choice($event)" [checked]="dataObject.option3" >
+		</ion-radio>
+		<ion-label>{{pageInfo.c}}</ion-label>
 		<br>
-		<div class="checkbox" (click)="choice($event)">C<div class="checked">✔</div></div>
-		<div class="c option">{{pageInfo.c}}</div>
+		<ion-radio data_checked="3" (click)="choice($event)" [checked]="dataObject.option4"  >
+		</ion-radio>
+		<ion-label>{{pageInfo.d}}</ion-label>
 		<br>
-		<div class="checkbox" (click)="choice($event)">D<div class="checked">✔</div></div>
-		<div class="d option">{{pageInfo.d}}</div>
-		<br>
-		<div class="useless"></div>
+		</ion-list>
+
 		<button class="next_question" (click)="nextPage()">下一题</button>
 	</div>
-
-	<!-- <ion-content #popoverContent padding class="popover-page">
-	  <div #popoverText class="text-to-change">
-	  </div>
-	</ion-content> -->
 </ion-content >

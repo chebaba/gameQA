@@ -8,8 +8,6 @@ import {PopoverPage} from '../result/result';
   templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
-  // @ViewChild('popoverContent', {read: ElementRef}) content: ElementRef;
-  // @ViewChild('popoverText', {read: ElementRef}) text: ElementRef;
 
   testRadioOpen: boolean;
   testRadioResult;
@@ -25,10 +23,4 @@ export class HomePage {
   nextPage(){
   	this.navCtrl.push(NewPage, this.nextPageInfo);
   } 
-
-  // presentPopover(ev) {
-  //   let popover = Popover.create(PopoverPage, this.nextPageInfo);
-
-  //   this.navCtrl.present(popover,{ev:ev});
-  // }  
 }
