@@ -40,6 +40,6 @@
 		<br>
 		</ion-list>
 
-		<button class="next_question" (click)="nextPage()">下一题</button>
+		<button class="next_question" (click)="nextPage()" [disabled]="dataObject.button" >下一题</button>
 	</div>
 </ion-content >

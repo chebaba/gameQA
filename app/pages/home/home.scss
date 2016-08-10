@@ -1,6 +1,8 @@
 .home-page{
-    background-color: #fad666;
-    font-style: 'Microsoft YaHei';
+    scroll-content{
+        background-color: #fad666;
+        font-style: 'Microsoft YaHei';
+    }
     img.index_pic{
         width: 100%;
         margin-top: 10%;
@@ -12,7 +14,7 @@
         left: 0;
         right: 0;
         margin: 0 auto;
-        height: 10%;
+        height: 15%;
         top: 60%;
     }
 
